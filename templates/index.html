@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZERON AI — Cloud Coding Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">Z</span><span>ZERON <b>AI</b></span></a>
+    <span class="status"><i></i> CLOUD WORKSPACE</span>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow">YOUR AUTONOMOUS AI DEVELOPER</div>
+      <h1>От идеи<br>до <span>готового проекта.</span></h1>
+      <p class="subtitle">Опиши задачу. ZERON AI будет готовить план, писать код и проверять результат — прямо в облаке.</p>
+      <div class="notice"><strong>Первая версия</strong><span>Сейчас можно отправлять и сохранять задачи. Подключение настоящей ИИ-модели и безопасного облачного исполнителя — следующий этап.</span></div>
+    </section>
+
+    <section class="workspace">
+      <div class="section-head">
+        <div><div class="eyebrow">NEW PROJECT</div><h2>Что нужно создать?</h2></div>
+        <span class="pill">BETA · 01</span>
+      </div>
+      <label for="task">Описание задачи</label>
+      <textarea id="task" maxlength="4000" placeholder="Например: создай приложение для Windows, которое показывает FPS и помогает подобрать настройки графики..."></textarea>
+      <div class="form-bottom"><span id="counter">0 / 4000</span><button id="submit">Отправить задачу <span>↗</span></button></div>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="jobs">
+      <div class="section-head"><div><div class="eyebrow">WORKSPACE</div><h2>История задач</h2></div><button id="refresh" class="secondary">Обновить ↻</button></div>
+      <div id="job-list" class="job-list"><div class="empty">Загружаем задачи…</div></div>
+    </section>
+    <footer>ZERON AI <span>·</span> BLUE FUTURE <span>·</span> Prototype</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

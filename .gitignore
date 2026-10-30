@@ -1,0 +1,25 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+# Локальная база данных и секреты
+*.db
+*.sqlite
+*.sqlite3
+.env.*
+!.env.example
+
+# Служебные файлы
+.vscode/
+__pycache__/
+*.py[cod]
+.env
+.venv/
+__pycache__/
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+.env.*
+!.env.example
+.vscode/
